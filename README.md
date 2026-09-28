@@ -87,7 +87,7 @@ This project needs three things that aren't in the repo (by design — they're t
 
 1. **Dog images**: download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip), unzip to `dogImages/` at the repo root.
 2. **Human images**: download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip), unzip to `lfw/` at the repo root.
-3. **VGG-16 bottleneck features**: download [DogVGG16Data.npz](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) into `bottleneck_features/`. (ResNet-50 bottleneck features are computed via `extract_bottleneck_features.py` for inference; see the notebook for how the training-time ResNet-50 features were obtained.)
+3. **Bottleneck features**: download [DogVGG16Data.npz](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) and [DogResnet50Data.npz](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) into `bottleneck_features/`. The ResNet-50 file is what the final model trains on; `extract_bottleneck_features.py` computes the same features for a single new image at prediction time.
 
 Then install dependencies — pick your platform's conda environment file, or use pip directly:
 
