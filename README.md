@@ -100,7 +100,7 @@ conda activate aind-dog
 pip install -r requirements/requirements.txt
 ```
 
-`requirements/requirements.txt` pins the original 2017-era package versions (Keras 2.0.2, TensorFlow 1.0.0) needed to reproduce the notebook exactly as run. These are long past their security-support window; ask if you'd like them bumped to current versions the way the [time-series RNN project](https://github.com/ShihanUTSA/Time-series-prediction-using-a-Recurrent-Neural-Network) was.
+`requirements/requirements.txt` pins the original 2017-era package versions (Keras 2.0.2, TensorFlow 1.0.0) needed to reproduce the notebook exactly as run. These versions are no longer maintained or security-patched, so use them in an isolated environment and only for reproducing the original results.
 
 Then open and run `dog_app.ipynb`.
 
